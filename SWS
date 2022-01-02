@@ -1,7 +1,8 @@
 if game.PlaceId == 3102144307 then
 	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 	local Window = Library.CreateLib("Anime Clicker Simulator gui by LagunScripts", "Sentinel")
-     -----AutoFarm
+
+	-----AutoFarm
 	
 	local Tab = Window:NewTab("AutoFarm")
 	local Section = Tab:NewSection("AutoClick")
@@ -472,18 +473,321 @@ if game.PlaceId == 3102144307 then
 	----AutoEgs
 	
 	local Tab = Window:NewTab("AutoEgs")
+	local Section = Tab:NewSection("AutoOpen")
+	Section:NewToggle("Dragon Star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().EGG1 = true;
 
-	
-	
+			while wait() do
+				if getgenv().EGG1 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Dragon Star", false, false)
+				end
+			end
+		else
+			getgenv().EGG1 = false;
+
+			while wait() do
+				if getgenv().EGG1 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Dragon Star", false, false)
+				end
+			end
+		end
+	end)
+	Section:NewToggle("Demon Star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().EGG2 = true;
+
+			while wait() do
+				if getgenv().EGG2 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Demon Star", false, false)
+				end
+			end
+		else
+			getgenv().EGG2 = false;
+
+			while wait() do
+				if getgenv().EGG2 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Demon Star", false, false)
+				end
+			end
+		end
+	end)
+	Section:NewToggle("1M Star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().EGG3 = true;
+
+			while wait() do
+				if getgenv().EGG3 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("1M Star", false, false)
+				end
+			end
+		else
+			getgenv().EGG3 = false;
+
+			while wait() do
+				if getgenv().EGG3 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("1M Star", false, false)
+				end
+			end
+		end
+	end)
+	Section:NewToggle("Pirate star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().EGG4 = true;
+
+			while wait() do
+				if getgenv().EGG4 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Pirate star", false, false)
+				end
+			end
+		else
+			getgenv().EGG4 = false;
+
+			while wait() do
+				if getgenv().EGG4 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Pirate star", false, false)
+				end
+			end
+		end
+	end)
+	Section:NewToggle("Slayer star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().EGG5 = true;
+
+			while wait() do
+				if getgenv().EGG5 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Slayer star", false, false)
+				end
+			end
+		else
+			getgenv().EGG5 = false;
+
+			while wait() do
+				if getgenv().EGG5 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Slayer star", false, false)
+				end
+			end
+		end
+	end)
+	Section:NewToggle("Nine Tailed Star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().EGG6 = true;
+
+			while wait() do
+				if getgenv().EGG6 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Nine Tailed Star", false, false)
+				end
+			end
+		else
+			getgenv().EGG6 = false;
+
+			while wait() do
+				if getgenv().EGG6 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Nine Tailed Star", false, false)
+				end
+			end
+		end
+	end)
+	Section:NewToggle("Spirit Star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().EGG7 = true;
+
+			while wait() do
+				if getgenv().EGG7 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Spirit Star", false, false)
+				end
+			end
+		else
+			getgenv().EGG7 = false;
+
+			while wait() do
+				if getgenv().EGG7 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Spirit Star", false, false)
+				end
+			end
+		end
+	end)
+	Section:NewToggle("Walled Star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().EGG8 = true;
+
+			while wait() do
+				if getgenv().EGG8 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Walled Star", false, false)
+				end
+			end
+		else
+			getgenv().EGG8 = false;
+
+			while wait() do
+				if getgenv().EGG8== true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Walled Star", false, false)
+				end
+			end
+		end
+	end)
+	Section:NewToggle("Narmekian Star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().EGG9 = true;
+
+			while wait() do
+				if getgenv().EGG9 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Narmekian Star", false, false)
+				end
+			end
+		else
+			getgenv().EGG9 = false;
+
+			while wait() do
+				if getgenv().EGG9== true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Narmekian Star", false, false)
+				end
+			end
+		end
+	end)
+	Section:NewToggle("Quirky Star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().EGG10 = true;
+
+			while wait() do
+				if getgenv().EGG10 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Quirky Star", false, false)
+				end
+			end
+		else
+			getgenv().EGG10 = false;
+
+			while wait() do
+				if getgenv().EGG10== true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Quirky Star", false, false)
+				end
+			end
+		end
+	end)
+	Section:NewToggle("Quirky Star", "Automacly opens egg", function(state)
+		if state then
+			getgenv().Egg11 = true;
+
+			while wait() do
+				if getgenv().EGG11 == true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Quirky Star", false, false)
+				end
+			end
+		else
+			getgenv().EGG11 = false;
+
+			while wait() do
+				if getgenv().EGG11== true then
+					game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer("Quirky Star", false, false)
+				end
+			end
+		end
+	end)
 	
 	----Misc
 	
 	local Tab = Window:NewTab("Misc")
+	local Section = Tab:NewSection("Misc")
+	Section:NewButton("Anti-Afk", "Makes that you cant get kicked from game for afk", function()
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+			vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			wait(1)
+			vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+	end)
+	Section:NewToggle("AutoDailyRewards", "Automacly claims daily rewards", function(state)
+		if state then
+			getgenv().Rew1 = true;
 
+			while wait() do
+				if getgenv().Rew1 == true then
+					game:GetService("ReplicatedStorage").Remotes.CollectChest:InvokeServer("DailyRewards")
+				end
+			end
+		else
+			getgenv().Rew1 = false;
 
+			while wait() do
+				if getgenv().Rew1 == true then
+					game:GetService("ReplicatedStorage").Remotes.CollectChest:InvokeServer("DailyRewards")
+				end
+			end
+		end
+	end)
+	Section:NewToggle("AutoGroupRewards", "Automacly collects group rewards", function(state)
+		if state then
+			getgenv().Rew2 = true;
+
+			while wait() do
+				if getgenv().Rew2 == true then
+					game:GetService("ReplicatedStorage").Remotes.CollectChest:InvokeServer("GroupRewards")
+				end
+			end
+
+		else
+			getgenv().Rew2 = false;
+
+			while wait() do
+				if getgenv().Rew2 == true then
+					game:GetService("ReplicatedStorage").Remotes.CollectChest:InvokeServer("GroupRewards")
+				end
+			end
+
+		end
+	end)
+	---Upgrades
+
+	local Tab = Window:NewTab("Upgrades")
+	local Section = Tab:NewSection("Upgrades")
+	Section:NewButton("Speed", "upgrades speed", function()
+		game:GetService("ReplicatedStorage").Remotes.RequestUpgrade:FireServer("Run Speed")
+	end)
+	Section:NewButton("Rebirths", "upgrades Rebirths", function()
+		game:GetService("ReplicatedStorage").Remotes.RequestUpgrade:FireServer("More Rebirths")
+	end)
+	Section:NewButton("Star Open Speed", "upgrades Star Open Speed", function()
+		game:GetService("ReplicatedStorage").Remotes.RequestUpgrade:FireServer("Star Open Speed")
+	end)
+	Section:NewButton("More Storage", "upgrades More Storage", function()
+		game:GetService("ReplicatedStorage").Remotes.RequestUpgrade:FireServer("More Storage")
+	end)
+	Section:NewButton("Crit Chance", "upgrades Crit Chance", function()
+		game:GetService("ReplicatedStorage").Remotes.RequestUpgrade:FireServer("Crit Chance")
+	end)
+	Section:NewButton("More Yen", "upgrades More Yen", function()
+		game:GetService("ReplicatedStorage").Remotes.RequestUpgrade:FireServer("More Yen")
+	end)
+	
+	----Settings
+
+	local Tab = Window:NewTab("Settings")
+	local Section = Tab:NewSection("Settings")
+	local colors = {
+		SchemeColor = Color3.fromRGB(0,255,255),
+		Background = Color3.fromRGB(0, 0, 0),
+		Header = Color3.fromRGB(0, 0, 0),
+		TextColor = Color3.fromRGB(255,255,255),
+		ElementColor = Color3.fromRGB(20, 20, 20)
+	}
+	Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+		Library:ToggleUI()
+	end)
+	Section:NewColorPicker("Color Text", "Color Info", Color3.fromRGB(0,0,0), function(color)
+		print(color)
+		-- Second argument is the default color
+	end)
+	
+
+	
+	
 		---Credits
 
 	local Tab = Window:NewTab("Credits")
+	local Section = Tab:NewSection("Credits")
+	Section:NewLabel("Credits to Lagun#6503")
+	Section:NewLabel("Dont forget to join discord: discord.gg/Ux55tWTV")
+
 
 
 
